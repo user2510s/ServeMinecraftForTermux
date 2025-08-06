@@ -32,15 +32,15 @@ install_java() {
 start_server() {
     echo "🚀 Iniciando servidor Minecraft..."
     taskset -c 0-$(($(nproc)-1)) java \
-    -Xms2G -Xmx2G \
-    -XX:+UseG1GC \
-    -XX:ParallelGCThreads=$(nproc) \
-    -XX:ConcGCThreads=$(nproc) \
-    -XX:ActiveProcessorCount=$(nproc) \
-    -Dpaper.maxChunkThreads=$(nproc) \
-    -XX:+UseZGC \
-    -jar "$SERVER_JAR" nogui
+        -Xms2G -Xmx2G \
+        -XX:+UseZGC \
+        -XX:ParallelGCThreads=$(nproc) \
+        -XX:ConcGCThreads=$(nproc) \
+        -XX:ActiveProcessorCount=$(nproc) \
+        -Dpaper.maxChunkThreads=$(nproc) \
+        -jar "$SERVER_JAR" nogui
 }
+
 
 
 # -------- EXECUÇÃO --------
