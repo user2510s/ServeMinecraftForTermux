@@ -50,7 +50,6 @@ termux-setup-storage
    ```
 
 ---
----
 
 ## 📂 Estrutura do projeto
 
