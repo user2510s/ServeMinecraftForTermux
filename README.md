@@ -1,9 +1,9 @@
-````markdown
+
 # 🚀 Servidor Minecraft no Termux
 
 Este repositório permite iniciar um servidor **Minecraft Java** diretamente no **Termux** de forma simples e rápida.
 
----
+
 
 ## 📋 Pré-requisitos
 
@@ -12,6 +12,7 @@ Antes de começar, você precisa ter o **Termux** instalado:
 📥 **Baixe aqui:** [Termux na Google Play](https://play.google.com/store/apps/details?id=com.termux&hl=pt_BR)
 
 Também será necessário ter o **Git** instalado no Termux:
+
 ```bash
 pkg install git
 ````
