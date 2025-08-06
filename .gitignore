@@ -10,3 +10,11 @@ world_nether/
 
 .console_history
 .usercache.json
+usercache.json
+whitelist.json
+version_history.json
+permissions.yml
+ops.json
+help.yml
+banned-ips.json
+banned-players.json
