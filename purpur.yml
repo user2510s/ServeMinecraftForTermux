@@ -9,6 +9,8 @@
 # Docs: https://purpurmc.org/docs 
 
 verbose: false
+chunks:
+  max-threads: 6
 settings:
   messages:
     cannot-ride-mob: <red>You cannot mount that mob
