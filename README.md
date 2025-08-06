@@ -50,15 +50,6 @@ termux-setup-storage
    ```
 
 ---
-
-## 🔄 Como atualizar o projeto
-
-Caso o repositório tenha recebido atualizações e você queira aplicá-las no seu Termux:
-
-```bash
-git pull origin main
-```
-
 ---
 
 ## 📂 Estrutura do projeto
