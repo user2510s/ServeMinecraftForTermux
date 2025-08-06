@@ -2,7 +2,7 @@
 
 # Caminho do seu servidor Minecraft
 SERVER_JAR="server.jar"
-JAVA_VERSION="21"
+JAVA_VERSION="21" # Versão do Java que você deseja instalars
 
 # Função para verificar se o Java 21 está instalado
 check_java() {
@@ -32,8 +32,8 @@ install_java() {
 start_server() {
     echo "🚀 Iniciando servidor Minecraft..."
     taskset -c 0-$(($(nproc)-1)) java \
-    -Xms2G -Xmx2G \
-    -XX:+UseG1GC \
+    -Xms1G -Xmx2G \  # Ajuste a memória conforme necessário
+    -XX:+UseG1GC \      # Usar o Garbage Collector G1
     -XX:ParallelGCThreads=$(nproc) \
     -XX:ConcGCThreads=$(nproc) \
     -XX:ActiveProcessorCount=$(nproc) \
