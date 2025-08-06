@@ -29,11 +29,17 @@ install_java() {
     pkg install -y openjdk-$JAVA_VERSION
 }
 
-# Função para iniciar o servidor
 start_server() {
     echo "🚀 Iniciando servidor Minecraft..."
-    java -Xms1G -Xmx2G -jar "$SERVER_JAR" nogui
+    taskset -c 0-$(($(nproc)-1)) java \
+        -Xms1G -Xmx2G \
+        -XX:+UseG1GC \
+        -XX:ParallelGCThreads=$(nproc) \
+        -XX:ConcGCThreads=$(nproc) \
+        -XX:ActiveProcessorCount=$(nproc) \
+        -jar "$SERVER_JAR" nogui
 }
+
 
 # -------- EXECUÇÃO --------
 check_java
