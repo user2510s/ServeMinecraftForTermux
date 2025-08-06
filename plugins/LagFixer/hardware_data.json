@@ -1,0 +1,13 @@
+{
+  "cpuName": "11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz",
+  "cpuMicroarchitecture": "Tiger Lake",
+  "cpuVendorFreq": 3000000000,
+  "logicalCores": 4,
+  "physicalCores": 2,
+  "totalMemory": 11715227648,
+  "pageSize": 4096,
+  "memoryType": "Unknown",
+  "diskCount": 1,
+  "partitionCount": 2,
+  "networkInterfaceCount": 1
+}
