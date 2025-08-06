@@ -2,6 +2,8 @@
 
 # 🚀 Servidor Minecraft no Termux
 
+## Minecraft version 1.21.8
+
 Este repositório permite iniciar um servidor **Minecraft Java** diretamente no **Termux** de forma simples e rápida.
 
 ---
